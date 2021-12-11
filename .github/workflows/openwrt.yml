@@ -43,12 +43,6 @@ jobs:
       - name: Install Helloword
         run: |
           echo "src-git helloworld https://github.com/fw876/helloworld" >> ./feeds.conf.default
-      - name: 主题
-        run: |
-          cd package
-          mkdir openwrt-packages
-          cd openwrt-packages
-          git clone https://github.com/jerrykuku/luci-theme-argon.git
       - name: Install OpenClash
         run: |
           mkdir package/luci-app-openclash
